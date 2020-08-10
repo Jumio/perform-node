@@ -1,0 +1,44 @@
+{
+  "name": "@jumio/perform-node",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "private": false,
+  "types": "dist/typings/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && npm audit",
+    "build": "webpack --config=webpack.config.js",
+    "lint": "tslint --project tsconfig.json",
+    "lint-fix-all": "npm run lint --fix",
+    "prettier-fix-all": "prettier --write '{*,src/**/*,test/**/*}.{ts,json}'",
+    "pretest": "npm run clean",
+    "example": "tsc --project example/tsconfig.example.json && node dist/example/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/image-size": "^0.8.0",
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.0.27",
+    "@types/webpack": "^4.41.21",
+    "clean-webpack-plugin": "^3.0.0",
+    "file-loader": "^6.0.0",
+    "jest": "^26.2.2",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.4",
+    "ts-loader": "^8.0.2",
+    "ts-node": "^8.10.2",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "peerDependencies": {
+    "image-size": "^0.8.3"
+  }
+}

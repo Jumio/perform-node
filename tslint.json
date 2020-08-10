@@ -1,0 +1,41 @@
+{
+  "extends": ["tslint:recommended", "tslint-eslint-rules", "tslint-config-prettier"],
+  "rules": {
+    "interface-over-type-literal": true,
+    "label-position": true,
+    "member-access": [true, "no-public"],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "public-static-method",
+          "protected-static-field",
+          "protected-static-method",
+          "private-static-field",
+          "private-static-method",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "no-console": false,
+    "no-floating-promises": true,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "grouped-imports": false,
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "typedef": [true, "call-signature", "parameter", "property-declaration"]
+  }
+}

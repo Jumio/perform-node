@@ -1,0 +1,6 @@
+export enum IdType {
+  PASSPORT = 'PASSPORT',
+  DRIVING_LICENSE = 'DRIVING_LICENSE',
+  ID_CARD = 'ID_CARD',
+  VISA = 'VISA'
+}

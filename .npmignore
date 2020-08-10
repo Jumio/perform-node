@@ -1,0 +1,15 @@
+.gitignore
+.prettierrc
+.vscode
+jest.config.js
+package-lock.json
+tsconfig.json
+tslint.json
+webpack.config.js
+yarn.lock
+yarn-error.log
+
+/.idea/
+/example/
+/node_modules/
+/src/
